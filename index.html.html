@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <style>
+        #Home {
+          background-color: red;
+        }
+        #News {
+          background-color: green;
+        }
+        #Contact {
+          background-color: mediumblue;
+        }
+        #About {
+          background-color: orange;
+        }
+      </style>
+</head>
+<body>
+      <button class="tablink" onclick="openPage('Home', this, 'red')">Home</button>
+      <button class="tablink" onclick="openPage('News', this, 'green')" id="defaultOpen" style="background-color: green;">News</button>
+      <button class="tablink" onclick="openPage('Contact', this, 'mediumblue')">Contact</button>
+      <button class="tablink" onclick="openPage('About', this, 'orange')">About</button>
+    <!-- Pages -->
+      <div id="#Home" class="tabcontent" style="display: none;">
+        <h3>New</h3>
+        <p>Home is where the heart is.</p>
+      </div>
+    <!-- News Page -->
+    <div id="#News" class="tabcontent" style="display: none;">
+        <h3>New</h3>
+        <p>Some news this fine day!</p>
+      </div>
+    <!-- Contact Page -->
+    <div id="#Contact" class="tabcontent" style="display: none;">
+        <h3>Contact</h3>
+        <p>Get in touch, or swing by for a cup of coffee.</p>
+      </div>
+    <!-- About Page -->
+    <div id="About" class="tabcontent" style="display: none;">
+      <h3>About</h3>
+      <p>Who we are and what we do.</p>
+    </div>
+</body>
+</html>
